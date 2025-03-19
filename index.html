@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Now Weather</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Weather Forecast</h1>
+      <div class="search-bar">
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button id="searchBtn">Search</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="current-weather">
+        <h2 id="cityName">City Name</h2>
+        <p id="dateTime">Date & Time</p>
+        <div class="weather-details">
+          <p id="temperature">15°C</p>
+          <p id="weatherDescription">Weather Description</p>
+          <p id="precipitation">Precipitation: 0%</p>
+          <p id="humidity">Humidity: 0%</p>
+          <p id="windSpeed">Wind Speed: 0 m/s</p>
+        </div>
+      </div>
+
+      <div class="week-forecast">
+        <h3>Week Forecast</h3>
+        <div class="forecast-days" id="forecastDays">
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
